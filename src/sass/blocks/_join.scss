@@ -1,0 +1,42 @@
+.join {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 520px;
+	width: 412px;
+	height: 610px;
+	box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(20px);
+	border-radius: 51px;
+	&__text {
+		margin-top: 45px;
+		font-family: 'Lato-900';
+		font-size: 36px;
+		line-height: 43px;
+		text-align: center;
+		color: #494949;
+	}
+	&__timer-text {
+		margin-top: 28px;
+		font-family: 'Poppins-normal';
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+	}
+	&__timer {
+		font-family: 'Poppins-bold';
+		font-size: 36px;
+		line-height: 54px;
+		text-align: center;
+		color: var(--blue-color);
+	}
+	&___timer-designations {
+		font-family: 'Poppins-normal';
+		font-size: 13px;
+		line-height: 20px;
+		margin: 0 auto;
+		width: 210px;
+		display: flex;
+		justify-content: space-between;
+	}
+}

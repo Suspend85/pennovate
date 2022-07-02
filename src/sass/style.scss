@@ -1,0 +1,24 @@
+@import 'base/stylesheet.scss';
+@import 'libs/bootstrap-reboot.min';
+// @import 'libs/normalize';
+// @import 'libs/reset';
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Mulish', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Rubik', sans-serif;
+
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Mulish:ital,wght@0,300;1,300&family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;700&display=swap');
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	border: 1px solid grey;
+}
+@import 'base/variables';
+@import 'blocks/buttons';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/join';
+
+
