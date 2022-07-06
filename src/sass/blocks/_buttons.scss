@@ -1,5 +1,10 @@
-.button {
-	// width: 218px;
-	// height: 45px;
-	// color: #f53855;
+.btn {
+	// display: flex;
+	a {
+		border: 1px solid var(--main-color);
+		color: var(--main-color);
+		border-radius: 50px;
+		padding: 12px 21px;
+		// position: relative;
+	}
 }

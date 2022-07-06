@@ -33,13 +33,41 @@
 	&_link {
 		line-height: 19px;
 		display: block;
+		width: max-content;
 	}
-
+	&_button {
+		min-width: fit-content;
+		display: flex;
+	}
 	&_button a {
-		padding: 9px 15px;
-		text-align: center;
-		border: 1px solid var(--main-color);
-		border-radius: 50px;
-		color: var(--main-color);
+		// position: relative;
+		overflow: hidden;
+		transition: 0.2s transform ease-in-out;
+		will-change: transform;
+		z-index: 0;
+		&:after {
+			background-color: var(--main-color);
+			border-radius: 50px;
+			content: '';
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: translate(-100%, 0) rotate(10deg);
+			transform-origin: top left;
+			transition: 0.2s transform ease-out;
+			will-change: transform;
+			z-index: -1;
+		}
+		&:hover:after {
+			transform: translate(0, 0);
+		}
+		&:hover {
+			border: 1px solid transparent;
+			color: #fff;
+			transform: scale(1.05);
+			will-change: transform;
+		}
 	}
 }
