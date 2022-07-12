@@ -22,6 +22,7 @@
 		font-size: 16px;
 		line-height: 24px;
 		text-align: center;
+		color: var(--gray-text-color);
 	}
 	&__timer {
 		font-family: 'Poppins-bold';
@@ -38,6 +39,7 @@
 		width: 210px;
 		display: flex;
 		justify-content: space-between;
+		color: var(--gray-text-color);
 	}
 	&__form {
 		margin-top: 57px;

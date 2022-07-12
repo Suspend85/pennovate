@@ -4,16 +4,9 @@
 // @import 'libs/reset';
 
 .container {
-	width: 1140px;
+	width: 1440px;
 	margin: 0 auto;
 	border: 1px solid grey;
-}
-
-.divider {
-	margin: 47px auto 0 auto;
-	width: 211px;
-	height: 2px;
-	background: var(--blue-color);
 }
 
 @import 'base/variables';
@@ -23,3 +16,5 @@
 @import 'blocks/promo';
 @import 'blocks/join';
 @import 'blocks/feautures';
+@import 'blocks/payback';
+@import 'blocks/footer';

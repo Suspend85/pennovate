@@ -1,12 +1,13 @@
 .menu {
-	margin: 41.5px 0 0 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
+	padding: 41.5px 0 0 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: 50px;
+	justify-content: space-evenly;
 	align-items: center;
-	gap: 280px;
 	font-family: 'Rubik-regular', sans-serif;
-	&_logo a {
+	&__logo a {
 		position: relative;
 		margin-left: 20px;
 		display: block;
@@ -26,20 +27,20 @@
 			background: rgba(0, 31, 126, 0.54);
 		}
 	}
-	&_items {
+	&__items {
 		display: flex;
 		gap: 32px;
 	}
-	&_link {
+	&__link {
 		line-height: 19px;
 		display: block;
 		width: max-content;
 	}
-	&_button {
+	&__button {
 		min-width: fit-content;
 		display: flex;
 	}
-	&_button a {
+	&__button a {
 		// position: relative;
 		overflow: hidden;
 		transition: 0.2s transform ease-in-out;
