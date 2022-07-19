@@ -1,47 +1,53 @@
 .promo {
-	position: relative;
-	background: linear-gradient(180deg, #f8f8f8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
-	&__title {
-		margin: 100px auto 0 auto;
-		color: var(--black-text-color);
-	}
-	&__subtitle {
-		margin: 31px auto 0 auto;
-		font-family: 'Rubik-regular';
-		font-size: 36px;
-		line-height: 30px;
-		text-align: center;
-		color: var(--gray-text-color);
-	}
-	&__text {
-		margin: 324px auto 0 auto;
-		font-family: 'Rubik-500';
-		font-size: 40px;
-		line-height: 50px;
-		text-align: center;
-		color: var(--black-text-color);
-	}
-	&__bg {
-		margin-top: 52px;
-		img {
-			display: block;
-			margin: 0 auto;
-			width: 75%;
-			// height: 100%;
-			object-fit: cover;
-			z-index: -1;
-		}
-	}
-	&__brands {
-		position: relative;
-		display: block;
-		margin: 0 auto;
-		justify-content: center;
-		width: 1180px;
-		img {
-			width: 100%;
-			height: 100%;
-			margin-bottom: 64px;
-		}
-	}
+    position: relative;
+    background: linear-gradient(180deg, #f8f8f8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+
+    &__title {
+        margin: 100px auto 0 auto;
+        color: var(--black-text-color);
+    }
+
+    &__subtitle {
+        margin: 31px auto 0 auto;
+        font-family: 'Rubik-regular', sans-serif;
+        font-size: 36px;
+        line-height: 30px;
+        text-align: center;
+        color: var(--gray-text-color);
+    }
+
+    &__text {
+        margin: 324px auto 0 auto;
+        font-family: 'Rubik-500', sans-serif;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        color: var(--black-text-color);
+    }
+
+    &__bg {
+        margin-top: 52px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 75%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+
+    &__brands {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        width: 1180px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 64px;
+        }
+    }
 }

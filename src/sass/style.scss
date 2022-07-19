@@ -1,12 +1,9 @@
 @import 'base/stylesheet.scss';
 @import 'libs/bootstrap-reboot.min';
-// @import 'libs/normalize';
-// @import 'libs/reset';
 
 .container {
-	width: 1440px;
-	margin: 0 auto;
-	border: 1px solid grey;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 @import 'base/variables';
