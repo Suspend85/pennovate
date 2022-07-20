@@ -13,7 +13,7 @@
         margin-top: 45px;
         font-family: 'Lato-900', serif;
         font-size: 36px;
-        line-height: 43px;
+        line-height: 1.2;
         text-align: center;
         color: #494949;
     }
@@ -22,28 +22,43 @@
         margin-top: 28px;
         font-family: 'Poppins-normal', sans-serif;
         font-size: 16px;
-        line-height: 24px;
+
+        line-height: var(--base-line-height);
         text-align: center;
         color: var(--gray-text-color);
     }
 
     &__timer {
-        font-family: 'Poppins-bold', sans-serif;
-        font-size: 36px;
-        line-height: 54px;
-        text-align: center;
-        color: var(--blue-color);
+        position: relative;
+
+        .timer {
+            font-family: 'Poppins-bold', sans-serif;
+            font-size: 36px;
+            line-height: var(--base-line-height);
+            text-align: center;
+            color: var(--blue-color);
+            display: flex;
+            justify-content: center;
+
+            &__block {
+                width: 70px;
+            }
+        }
     }
 
     &__timer-designations {
         font-family: 'Poppins-normal', sans-serif;
         font-size: 13px;
-        line-height: 20px;
+        line-height: var(--base-line-height);
         margin: 0 auto;
         width: 210px;
         display: flex;
         justify-content: space-between;
         color: var(--gray-text-color);
+
+        div {
+            padding-left: 7px;
+        }
     }
 
     &__form {
@@ -56,7 +71,7 @@
         label {
             font-family: 'Lato-normal', sans-serif;
             font-size: 14px;
-            line-height: 17px;
+            line-height: 17px; // 1.21
             color: var(--main-color);
             padding-left: 15px;
             margin-bottom: 5px;
@@ -64,6 +79,12 @@
             position: absolute;
             top: -20px;
         }
+    }
+
+    .status {
+        display: flex;
+        justify-content: center;
+        color: red;
     }
 
     &__input {
@@ -106,7 +127,7 @@
     &__btn {
         font-family: 'Poppins-500', sans-serif;
         font-size: 18px;
-        line-height: 57px;
+        line-height: 57px; // 3.16
         width: 270px;
         height: 55px;
         overflow: hidden;

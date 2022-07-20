@@ -11,7 +11,7 @@
         margin: 31px auto 0 auto;
         font-family: 'Rubik-regular', sans-serif;
         font-size: 36px;
-        line-height: 30px;
+        //line-height: 1;
         text-align: center;
         color: var(--gray-text-color);
     }
@@ -20,7 +20,7 @@
         margin: 324px auto 0 auto;
         font-family: 'Rubik-500', sans-serif;
         font-size: 40px;
-        line-height: 50px;
+        line-height: 1;
         text-align: center;
         color: var(--black-text-color);
     }
@@ -42,7 +42,7 @@
         display: block;
         margin: 0 auto;
         justify-content: center;
-        width: 1180px;
+        width: auto;
 
         img {
             width: 100%;

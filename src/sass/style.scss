@@ -2,8 +2,37 @@
 @import 'libs/bootstrap-reboot.min';
 
 .container {
-    width: 1440px;
+    width: 1410px;
     margin: 0 auto;
+    //margin-right: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.gotop {
+    position: fixed;
+    right: 21px;
+    bottom: 22px;
+    display: flex;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+
+    &__link {
+        background: url('../icons/totop.svg') no-repeat;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        transition: all 1s;
+        cursor: pointer;
+    }
 }
 
 @import 'base/variables';
@@ -15,3 +44,4 @@
 @import 'blocks/feautures';
 @import 'blocks/payback';
 @import 'blocks/footer';
+@import 'blocks/media';
